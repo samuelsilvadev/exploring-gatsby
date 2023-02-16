@@ -1,18 +1,12 @@
 import { Link } from 'gatsby';
 import React from 'react';
-import Head from '../components/Head';
-import Header from '../components/Header';
+import Layout from '../components/Layout';
 
 function IndexPage() {
   return (
-    <>
-      <Head />
-      <Header />
-      <main>
-        <h1>Home Page with Gatsby</h1>
-        <Link to="/about">Go to About</Link>
-      </main>
-    </>
+    <Layout title="Home Page with Gatsby">
+      <Link to="/about">Go to About</Link>
+    </Layout>
   );
 }
 
