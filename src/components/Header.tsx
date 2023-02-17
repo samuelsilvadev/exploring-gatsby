@@ -17,8 +17,19 @@ function Header() {
   const { title } = data.site?.siteMetadata ?? {};
 
   return (
-    <header>
-      <Link to="/">{title}</Link>
+    <header
+      style={{
+        background: 'rebeccapurple',
+        color: 'white',
+        height: '100px',
+        display: 'flex',
+        alignItems: 'center',
+        padding: '0 20px',
+      }}
+    >
+      <Link to="/" style={{ color: 'inherit' }}>
+        {title}
+      </Link>
     </header>
   );
 }
